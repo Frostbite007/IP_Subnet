@@ -35,7 +35,7 @@ function createChoice(end) {
   while (select.firstChild) {
     select.removeChild(select.firstChild);
   }
-  for (var start = 32; start >= end; start--) {
+  for (var start = end; start <= 32; start++) {
     var option = document.createElement("option");
     option.value = start;
     var ip = find_IP(start);
@@ -173,7 +173,7 @@ function find_start_IP(ip, subnet, code) {
 
 function possible_network(ip, subnet, num_host) {
   var div_table_3 = document.getElementById("div-table-3");
-  div_table_3.className = "panel panel-default";
+  div_table_3.className = "set-result-table";
   var table = document.createElement("table");
   table.id = "table-3";
   table.className = "panel-body";
@@ -269,7 +269,7 @@ function get_result() {
   while (div_table_2.firstChild) {
     div_table_2.removeChild(div_table_2.firstChild);
   }
-  div_table_2.className = "panel panel-default";
+  div_table_2.className = "set-result-table";
   var table_2 = document.createElement("table");
   table_2.id = "table-2";
   table_2.className = "panel-body";
