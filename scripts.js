@@ -184,7 +184,6 @@ function possible_network(ip, subnet, num_host) {
   var start_IP_star = find_start_IP(ip, subnet, "*");
   head.appendChild(document.createTextNode("All possible /" + subnet + " Networks" + start_IP_star));
   div_table_3.appendChild(head);
-  div_table_3.appendChild(document.createElement("hr"));
   var tr = document.createElement("tr");
   var th_1 = document.createElement("th");
   var th_2 = document.createElement("th");
@@ -278,7 +277,6 @@ function get_result() {
   head.className = "panel-heading";
   head.appendChild(document.createTextNode("Result"));
   div_table_2.appendChild(head);
-  div_table_2.appendChild(document.createElement("hr"));
   for (i in ans) {
     if (ans[i] != "") {
       var tr = document.createElement("tr");

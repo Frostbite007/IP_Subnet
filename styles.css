@@ -5,17 +5,42 @@
 .select-subnet {
   text-align: center;
   border: solid;
-
 }
 
 .set-table {
+  width: 30%;
+  height: 10%;
   text-align: center;
-  width: 25%;
+
+  border-radius: 10px;
+  background-color: #89d4b6;
 }
 
 .set-result-table {
   width: 100%;
   text-align: center;
-  ta
+  background-color: #89d4b6;
+  border-radius: 10px;
+}
 
+.btn-set {
+  margin-left: 48%;
+  margin-top: 10px;
+}
+
+.set-subnet {
+  margin: 10px;
+}
+
+.panel-heading {
+  text-align: center;
+  font-weight: bold;
+}
+
+.set-body {
+  background-color: #e1ffe6;
+}
+
+.panel-body{
+  width: 100%;
 }

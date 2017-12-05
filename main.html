@@ -5,16 +5,15 @@
 <head>
   <link rel="stylesheet" href="./styles.css">
   <script src="./scripts.js"></script>
-  <title>IP Subnet Calculator</title>
+  <title>SUBNET CALCULATOR</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 </head>
 
-<body>
-  <div class="">
-    <p class="panel-heading" id="Topic">IP Subnet Calculator</p>
-    <hr>
+<body class="set-body">
+  <div class="set-subnet">
+    <p class="panel-heading" id="Topic"><b>IP Subnet Calculator</b></p>
     <div class="subnet-table">
       <table align="center" class="set-table">
         <form id="form_network_class" action="javascript:change_subnet();">
@@ -49,17 +48,17 @@
                 <input id="IP_Address" type="text" value="" pattern="(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)">
               </td>
             </tr>
-            <tr><td><button type="submit" class='button -regular'> CALCULATE </button><td></tr>
             </form>
           </table>
+          <button type="submit" class='button -regular btn-set btn btn-primary'> SUBMIT </button>
         </div>
     </div>
     <div class="row" id="result">
     <div class="col-md-6">
-          <div id="div-table-2" ></div>
+          <div id="div-table-2" align="center"></div>
     </div>
     <div class="col-md-6">
-          <div id="div-table-3" ></div>
+          <div id="div-table-3" align="center"></div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
