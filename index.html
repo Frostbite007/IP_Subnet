@@ -11,57 +11,59 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 </head>
 
-<body class="set-body form-inline">
-  <div class="set-subnet col-md-6">
+<body class="set-body">
+  <div class="form-inline">
+    <div class="col-md-6">
     <p class="panel-heading" id="Topic"><b>IP Subnet Calculator</b></p>
     <div class="subnet-table">
-      <table  class="set-table">
-        <form id="form_network_class" action="javascript:change_subnet();">
-            <tr>
-              <td id="table-1-L">
-                <b>NETWORK CLASS</b>
-              </td>
-              <td id="table-1-R">
-                <input name="network_class" type="radio" value="any" onclick="this.form.submit();" checked> ANY
-                <input name="network_class" type="radio" value="A" onclick="this.form.submit();" style="margin-left:10px"> A
-                <input name="network_class" type="radio" value="B" onclick="this.form.submit();" style="margin-left:10px"> B
-                <input name="network_class" type="radio" value="C" onclick="this.form.submit();" style="margin-left:10px"> C
-              </td>
-            </tr>
-          </form>
-          <form id="form_calculate" action="javascript:get_result();">
-            <tr>
-              <td id="table-1-L">
-                <b>SUBNET</b>
-              </td>
-              <td id="table-1-R" >
-                <select class="decorated"name="subnet" id="subnet" >
-                  <script> javascript:createChoice(1); </script>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <td id="table-1-L">
-                <b>IP ADDRESS</b>
-              </td>
-              <td id="table-1-R">
-                <input id="IP_Address" type="text" value="" pattern="(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)">
-              </td>
-            </tr>
+      <div class="set-subnet">
+        <table  class="set-table">
+          <form id="form_network_class" action="javascript:change_subnet();">
+              <tr>
+                <td id="table-1-L">
+                  <b>NETWORK CLASS</b>
+                </td>
+                <td id="table-1-R">
+                  <input name="network_class" type="radio" value="any" onclick="this.form.submit();" checked> ANY
+                  <input name="network_class" type="radio" value="A" onclick="this.form.submit();" style="margin-left:10px"> A
+                  <input name="network_class" type="radio" value="B" onclick="this.form.submit();" style="margin-left:10px"> B
+                  <input name="network_class" type="radio" value="C" onclick="this.form.submit();" style="margin-left:10px"> C
+                </td>
+              </tr>
             </form>
-          </table>
-          <button type="submit" class='button -regular btn-set btn btn-primary'> SUBMIT </button>
-          <div class="row" id="result">
-            <div id="div-table-2" align="center"></div>
+            <form id="form_calculate" action="javascript:get_result();">
+              <tr>
+                <td id="table-1-L">
+                  <b>SUBNET</b>
+                </td>
+                <td id="table-1-R" >
+                  <select class="decorated"name="subnet" id="subnet" >
+                    <script> javascript:createChoice(1); </script>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td id="table-1-L">
+                  <b>IP ADDRESS</b>
+                </td>
+                <td id="table-1-R">
+                  <input id="IP_Address" type="text" value="" pattern="(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)">
+                </td>
+              </tr>
+              </form>
+            </table>
+            <button type="submit" class='button -regular btn-set btn btn-primary'> SUBMIT </button>
           </div>
+            <div id="result">
+              <div id="div-table-2" align="center"></div>
+            </div>
         </div>
     </div>
-    <div class="col-md-6" id="result">
-    <div class="row">
-          <div id="div-table-3" align="center"></div>
-    </div>
-  </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <div class="col-md-6" id="result">
+        <div id="div-table-3" align="center"></div>
+  </div>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>

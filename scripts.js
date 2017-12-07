@@ -173,7 +173,7 @@ function find_start_IP(ip, subnet, code) {
 
 function possible_network(ip, subnet, num_host) {
   var div_table_3 = document.getElementById("div-table-3");
-  div_table_3.className = "set-result-table";
+  div_table_3.className = "set-possible";
   var table = document.createElement("table");
   table.id = "table-3";
   table.className = "panel-body";
