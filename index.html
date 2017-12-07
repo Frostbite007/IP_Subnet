@@ -11,11 +11,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 </head>
 
-<body class="set-body">
-  <div class="set-subnet">
+<body class="set-body form-inline">
+  <div class="set-subnet col-md-6">
     <p class="panel-heading" id="Topic"><b>IP Subnet Calculator</b></p>
     <div class="subnet-table">
-      <table align="center" class="set-table">
+      <table  class="set-table">
         <form id="form_network_class" action="javascript:change_subnet();">
             <tr>
               <td id="table-1-L">
@@ -51,13 +51,13 @@
             </form>
           </table>
           <button type="submit" class='button -regular btn-set btn btn-primary'> SUBMIT </button>
+          <div class="row" id="result">
+            <div id="div-table-2" align="center"></div>
+          </div>
         </div>
     </div>
-    <div class="row" id="result">
-    <div class="col-md-6">
-          <div id="div-table-2" align="center"></div>
-    </div>
-    <div class="col-md-6">
+    <div class="col-md-6" id="result">
+    <div class="row">
           <div id="div-table-3" align="center"></div>
     </div>
   </div>
